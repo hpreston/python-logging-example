@@ -1,0 +1,39 @@
+[03/11/2021 19:47:29.328] [INFO] [example-logger.py] [<module>():38] Attempt to connect to host ios-xe-mgmt-latest.cisco.com on port 830 as user developer
+[03/11/2021 19:47:30.913] [DEBUG] [example-logger.py] [<module>():47] Connection check: True
+[03/11/2021 19:47:30.919] [DEBUG] [example-logger.py] [<module>():50] Sending NETCONF get with filter: <filter xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+    <interface>
+      <name>GigabitEthernet2</name>
+    </interface>
+  </interfaces>
+  <interfaces-state xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+    <interface>
+      <name>GigabitEthernet2</name>
+    </interface>
+  </interfaces-state>
+</filter>
+
+[03/11/2021 19:47:31.195] [INFO] [example-logger.py] [<module>():52] Was get 'ok': True
+[03/11/2021 19:48:15.963] [INFO] [example-logger.py] [<module>():38] Attempt to connect to host ios-xe-mgmt-latest.cisco.com on port 830 as user developer
+[03/11/2021 19:48:17.964] [DEBUG] [example-logger.py] [<module>():47] Connection check: True
+[03/11/2021 19:48:17.970] [DEBUG] [example-logger.py] [<module>():50] Sending NETCONF get with filter: <filter xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+    <interface>
+      <name>GigabitEthernet2</name>
+    </interface>
+  </interfaces>
+  <interfaces-state xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+    <interface>
+      <name>GigabitEthernet2</name>
+    </interface>
+  </interfaces-state>
+</filter>
+
+[03/11/2021 19:48:18.244] [INFO] [example-logger.py] [<module>():52] Was get 'ok': True
+[03/11/2021 19:48:18.444] [DEBUG] [example-logger.py] [<module>():58] Raw netconf data returned: <?xml version="1.0" encoding="UTF-8"?>
+<rpc-reply xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:f184c19f-d96b-4017-b886-60215fbd52ce" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"><data><interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces"><interface><name>GigabitEthernet2</name><description>Dan was here</description><type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type><enabled>false</enabled><ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"><address><ip>192.168.1.1</ip><netmask>255.255.255.0</netmask></address></ipv4><ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"></ipv6></interface></interfaces><interfaces-state xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces"><interface><name>GigabitEthernet2</name><type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type><admin-status>down</admin-status><oper-status>down</oper-status><last-change>2021-11-03T19:26:03.294+00:00</last-change><if-index>2</if-index><phys-address>00:50:56:bf:4e:a3</phys-address><speed>1000000000</speed><statistics><discontinuity-time>2021-11-03T19:23:47+00:00</discontinuity-time><in-octets>420</in-octets><in-unicast-pkts>7</in-unicast-pkts><in-broadcast-pkts>0</in-broadcast-pkts><in-multicast-pkts>0</in-multicast-pkts><in-discards>0</in-discards><in-errors>0</in-errors><in-unknown-protos>0</in-unknown-protos><out-octets>0</out-octets><out-unicast-pkts>0</out-unicast-pkts><out-broadcast-pkts>0</out-broadcast-pkts><out-multicast-pkts>0</out-multicast-pkts><out-discards>0</out-discards><out-errors>0</out-errors></statistics></interface></interfaces-state></data></rpc-reply>
+[03/11/2021 19:48:47.323] [INFO] [example-logger.py] [<module>():38] Attempt to connect to host ios-xe-mgmt-latest.cisco.com on port 830 as user developer
+[03/11/2021 19:48:48.887] [ERROR] [example-logger.py] [<module>():54] ❌🛑 ERROR: AuthenticationException('Authentication failed.')
+[03/11/2021 19:51:33.429] [INFO] [example-logger.py] [<module>():38] Attempt to connect to host ios-xe-mgmt-latest.cisco.com on port 830 as user developer
+[03/11/2021 19:51:34.394] [ERROR] [example-logger.py] [<module>():54] ❌🛑 ERROR: AuthenticationException('Authentication failed.')
+[03/11/2021 19:51:34.413] [CRITICAL] [example-logger.py] [<module>():55] CRITICAL ERROR
