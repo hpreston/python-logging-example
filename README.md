@@ -6,6 +6,9 @@ This repository provides a very simple example of the same script with and witho
 * [`example-print.py`](example-print.py) is a NETCONF based exmaple that looks up some information from a DevNet Sandbox and uses basic print statements to output to the console status messages.  
 * [`example-logger.py`](example-logger.py) is the same script, but uses Python logging to send informational and debug messages to a log file called `mylog.log`.  Error messages will still be printed to the screen. 
 * [`logger.conf`](logger.conf) is the Python logging configuration file 
+* [`mylog.example`](mylog.example) is an example of what a log file might look like from this example and is included for reference. 
+    * If you run the `example-logger.py` a `mylog.log` file will be created. 
+* [`requirements.txt`](requirements.txt) is a Python requirements file that includes the needed libraries to run the example scripts.
 
 For reference on the Python Logging features, see the [Logging HOWTO](https://docs.python.org/3/howto/logging.html#) from Python.org.  
 
